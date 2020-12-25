@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+\begin{document}
+\title{FAMOUS PEOPLE}
+\maketitle
+
+\section{Stephen William Hawking} 
+He was an English theoretical physicist.he has written about big bang theory of the universe and theorized about black holes.
+
+\section{Steve Jobs}
+Popularly known as the ‘Father of the Digital World’, He is an American entrepreneur, investor, co-founder of Apple Inc. 
+\section{Albert Einstein} He was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics.
+\begin{figure}
+\includegraphics[width=11cm]{both.jpg}
+\caption{left one is Einstein right one is Hawking}
+\end{figure}
+\begin{figure}
+
+\includegraphics[width=11cm]{jobs.jpg}
+\caption{Jobs}
+\end{figure}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{3 famous people}
+    \label{tab:table1}
+    \begin{tabular}{|c|c|c|} 
+    \hline
+      \textbf{} & \textbf{name} & \textbf{birthday}\\
+    
+      \hline
+      1. & Stephen Hawking & January 8 1942 \\
+     \hline
+      2. & Steve Jobs & February 24 1955\\
+      \hline
+      3. & Albert Einstein & March 14 1879\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\section{formulas}
+$$\iiint f(x,y,z)dxdydz$$
+$$e=\sum_{n=0}^{\infty}\frac{1}{n!}$$
+$$ e=\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^n$$
+$$\begin{bmatrix}
+1&2&3\\
+4&5&6\\
+\end{bmatrix}$$
+
+\section{code(Maximum of two numbers in c++)}
+\begin{lstlisting}
+
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+int max(int num1, int num2) {
+	if (num1 < num2) {
+		return num2;
+	}
+	else {
+		return num1;
+	}
+}
+
+int main() 
+{
+	int number1, number2;
+	cout << "enter two numbers" << endl;
+	cin >> number1 >> number2;
+	int maximum = max(number1, number2);
+	cout << maximum << endl;
+	system("pause>0");
+    return 0;
+    }
+\end{lstlisting}
+
+\end{document}
